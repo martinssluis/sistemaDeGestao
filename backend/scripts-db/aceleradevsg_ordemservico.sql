@@ -21,7 +21,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '611a01b0-b5ee-11f0-874c-c025a52fb6aa:1-26';
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '611a01b0-b5ee-11f0-874c-c025a52fb6aa:1-41';
 
 --
 -- Table structure for table `ordemservico`
@@ -40,6 +40,7 @@ CREATE TABLE `ordemservico` (
   `valor_total` decimal(10,2) DEFAULT NULL,
   `fk_Cliente_id` int DEFAULT NULL,
   `fk_Funcionario_id` int DEFAULT NULL,
+  `descricao` text,
   PRIMARY KEY (`id`),
   KEY `fk_Cliente_id` (`fk_Cliente_id`),
   KEY `fk_Funcionario_id` (`fk_Funcionario_id`),
@@ -67,4 +68,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-03 18:27:32
+-- Dump completed on 2025-11-06 19:14:42
