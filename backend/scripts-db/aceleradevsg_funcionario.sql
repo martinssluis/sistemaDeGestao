@@ -21,7 +21,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '611a01b0-b5ee-11f0-874c-c025a52fb6aa:1-26';
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '611a01b0-b5ee-11f0-874c-c025a52fb6aa:1-41';
 
 --
 -- Table structure for table `funcionario`
@@ -40,6 +40,7 @@ CREATE TABLE `funcionario` (
   `descricao` varchar(255) DEFAULT NULL,
   `data_admissao` date DEFAULT NULL,
   `data_demissao` date DEFAULT NULL,
+  `senha` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -63,4 +64,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-03 18:27:32
+-- Dump completed on 2025-11-06 19:14:42
