@@ -10,19 +10,19 @@ public class Client {
     private String phoneNumber;
     private String email;
     private String identifier;
-    private String decription;
+    private String description;
     private Date createdAt;
 
 
     public Client(){}
 
-    public Client(Long id, String name, String phoneNumber, String email, String identifier, String decription, Date createdAt) {
+    public Client(Long id, String name, String phoneNumber, String email, String identifier, String description, Date createdAt) {
         this.id = id;
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.email = email;
         this.identifier = identifier;
-        this.decription = decription;
+        this.description = description;
         this.createdAt = createdAt;
     }
 
@@ -67,11 +67,11 @@ public class Client {
     }
 
     public String getDecription() {
-        return decription;
+        return description;
     }
 
-    public void setDecription(String decription) {
-        this.decription = decription;
+    public void setDecription(String description) {
+        this.description = description;
     }
 
     public Date getCreatedAt() {
