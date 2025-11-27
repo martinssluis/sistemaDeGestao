@@ -1,28 +1,12 @@
-/* Reset básico */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
+/* Centralização da div principal */
+.estiloLogin {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background: #f3f4f6; /* cor de fundo suave */
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
-/* Centralização da div principal */
-.login-container {
+.loginContainer {
   background: #fff;
   padding: 2rem;
   border-radius: 0.75rem;
@@ -40,7 +24,7 @@ form {
   margin-top: 1.5rem;
 }
 
-input {
+.inputs {
   padding: 0.75rem 1rem;
   border: 1px solid #d1d5db;
   border-radius: 0.5rem;
@@ -53,7 +37,7 @@ input:focus {
   box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
 }
 
-button {
+.buttons {
   background: #6366f1;
   color: white;
   font-weight: 600;
